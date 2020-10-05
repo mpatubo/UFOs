@@ -88,10 +88,11 @@ function updateFilters() {
   function filterTable() {
   
     // 8. Set the filtered data to the tableData.
-    let filteredData = ["datetime", "city", "state", "country", "shape"];
-    let filteredData = d3.select("").property("value");
+     filteredData = ["datetime", "city", "state", "country", "shape"];
+    // var filteredData = filters[filteredData]
+    let filteredData = d3.select("").property(value);
     let filteredData = tableData;
-    //var date = filters[filteredData]
+    var date = filters[filteredData]
   
     // 9. Loop through all of the filters and keep any data that
     // matches the filter values
